@@ -1,0 +1,65 @@
+/* Container principal da página de busca */
+.buscaContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+/* Título da página */
+h2 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+/* Formulário de busca com campo e botão */
+.form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.form input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.form button {
+  padding: 10px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.form button:hover {
+  background-color: #0056b3;
+}
+
+/* Mensagem exibida em caso de erro ou nenhum resultado */
+.msg {
+  text-align: center;
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 16px;
+}
+
+/* Área onde os resultados são exibidos em formato de grid */
+.resultados {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+/* Responsividade para dispositivos com largura até 480px */
+@media (max-width: 480px) {
+  .form {
+    flex-direction: column;
+  }
+
+  .form button {
+    width: 100%;
+  }
+}

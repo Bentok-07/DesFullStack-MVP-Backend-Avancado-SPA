@@ -1,0 +1,48 @@
+/* Reset de margens, altura e largura da aplicação */
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* Container principal com largura cheia e espaçamento horizontal */
+.container-largo {
+  width: 100%;
+  max-width: 100%;
+  padding: 0 24px;
+  margin: 0;
+}
+
+/* Estrutura flex vertical para ocupar a tela inteira */
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Área de conteúdo expansível */
+.content {
+  flex: 1;
+  margin-top: 0px;
+}
+
+/* Tipografia e fundo da aplicação */
+body {
+  font-family: Arial, sans-serif;
+  background: #dcecaf15;
+  color: #333;
+}
+
+/* Links sem sublinhado e cor herdada */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Reset de listas não ordenadas */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

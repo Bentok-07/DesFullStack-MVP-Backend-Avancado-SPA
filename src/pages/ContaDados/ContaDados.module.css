@@ -1,0 +1,88 @@
+.container {
+  padding: 20px;
+  max-width: 720px;
+  margin: 24px auto;
+}
+
+.title {
+  margin: 0 0 8px 0;
+  font-size: 1.5rem;
+}
+
+.feedbackOk {
+  color: #1b5e20;
+  margin: 8px 0;
+}
+
+.feedbackErr {
+  color: #c62828;
+  margin: 8px 0;
+}
+
+.formGrid {
+  display: grid;
+  gap: 12px;
+}
+
+/* Linha com 2 colunas (ex.: cidade + UF) */
+.row2 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 12px;
+}
+
+.field {
+  display: grid;
+  gap: 6px;
+}
+
+.label {
+  font-weight: 600;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.input.invalid {
+  border-color: #c62828;
+}
+
+.hint {
+  color: #c62828;
+  font-size: 12px;
+  margin-top: -2px;
+}
+
+.passwordBlock {
+  margin-top: 16px;
+}
+
+.linkBtn {
+  background: transparent;
+  border: none;
+  color: #0d47a1;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+/* Responsivo */
+@media (max-width: 640px) {
+  .container {
+    padding: 12px;
+    margin: 16px auto;
+  }
+  .row2 {
+    grid-template-columns: 1fr;
+  }
+}

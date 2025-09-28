@@ -1,0 +1,73 @@
+/* Container principal da página de confirmação */
+.confirmacaoContainer {
+  max-width: 960px;
+  margin: 60px auto 0 auto;
+  padding: 30px;
+  text-align: center;
+}
+
+/* Lista dos itens do pedido */
+.listaItens {
+  margin-top: 24px;
+  text-align: center;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Sessão de informações de pagamento */
+.secaoPagamento {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+/* Bloco individual de pagamento (ex: PIX ou boleto) */
+.pagamento {
+  text-align: center;
+}
+
+/* Imagem do código PIX */
+.imgPix {
+  max-width: 600px;
+  width: 20%;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para exibição do código do boleto */
+.boleto {
+  background: #eee;
+  padding: 1px 1px;
+  font-family: monospace;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  display: inline-block;
+  margin-top: 2px;
+}
+
+/* Ações finais (Meus pedidos / Voltar à loja) */
+.acoesFinais {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Responsividade para dispositivos menores */
+@media (max-width: 600px) {
+  .imgPix {
+    width: 60%;
+  }
+
+  .boleto {
+    font-size: 0.85rem;
+  }
+
+  .acoesFinais {
+    gap: 08px;
+  }
+}

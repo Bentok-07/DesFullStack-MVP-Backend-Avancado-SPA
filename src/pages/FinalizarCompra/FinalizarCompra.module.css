@@ -1,0 +1,78 @@
+/* Container principal da página de finalização */
+.finalizarContainer {
+  padding: 5px 16px 32px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-sizing: border-box;
+  margin-top: 30px;
+}
+
+/* Subcontainer que agrupa a coluna de itens e o formulário */
+.subContainerFinalizar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 1px;
+  width: 100%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+/* Coluna onde os itens do pedido são exibidos */
+.colunaItens {
+  flex: 2;
+  min-width: 300px;
+}
+
+/* Coluna com o formulário de nome e endereço */
+.colunaFormulario {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Estilo dos rótulos dos campos */
+.colunaFormulario label {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+/* Estilo dos campos de entrada e texto */
+.colunaFormulario input,
+.colunaFormulario textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+/* Bloco com o resumo do pedido */
+.resumoCompra {
+  padding: 16px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.resumoCompra p {
+  margin: 8px 0;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 480px) {
+  .colunaFormulario input,
+  .colunaFormulario textarea {
+    font-size: 0.95rem;
+  }
+
+  .resumoCompra {
+    font-size: 0.95rem;
+  }
+}

@@ -1,0 +1,139 @@
+/* Cabeçalho fixo no topo com fundo escuro e espaçamento interno */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 16px;
+  background-color: rgba(30, 83, 23, 0.767);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Estilo da logo no cabeçalho */
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #be9e34;
+  margin-right: 50px;
+}
+
+/* Container do ícone de rota */
+.indicadorRota {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-right: 12px;
+  margin-left: auto;
+}
+
+
+/* Estilo do ícone (svg) */
+.indicadorRota svg {
+  font-size: 20px;
+  color: #ffffff; 
+}
+
+
+/* Container de navegação alinhado à direita */
+nav {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  padding-right: 50px;
+}
+
+/* Lista de itens de navegação */
+.navList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Item da navegação */
+.navItem {
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+/* Link de navegação */
+.navLink {
+  color: white;
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: background 0.3s;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+/* Hover no link */
+.navLink:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Estilo ao focar usando teclado */
+.navLink:focus-visible {
+  background-color: #375c53;
+  color: #000;
+}
+
+/* Estilo aplicado ao link ativo */
+.ativo {
+  background-color: rgba(0, 0, 0, 0.096);
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 600px) {
+  .header {
+    padding: 8px 12px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+    padding-right: 4px;
+    margin-right: 12px;
+  }
+
+  .navList {
+    gap: 6px;
+  }
+
+  .navLink {
+    font-size: 0.75rem;
+    padding: 4px 6px;
+  }
+}
+
+
+.btnLogout {
+  color: white;
+  background-color: transparent;
+  border: 1px solid #be9e34;
+  border-radius: 6px;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1;
+  transition: background 0.3s, color 0.3s;
+  margin-left: 1rem;
+}
+
+.btnLogout:hover {
+  background-color: #be9e34;
+  color: #000;
+}
+
+.btnLogout:focus-visible {
+  outline: none;
+  background-color: #375c53;
+  color: #fff;
+}

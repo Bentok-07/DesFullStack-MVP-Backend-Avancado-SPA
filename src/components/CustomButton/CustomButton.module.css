@@ -1,0 +1,57 @@
+/* Estilo base para o botão personalizado */
+.customButton {
+  background-color: #336458;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+/* Estado de hover para o botão base */
+.customButton:hover {
+  background-color: #375c53;
+}
+
+/* Efeito de clique (active) */
+.customButton:active {
+  transform: scale(0.98);
+}
+
+/* Estado de botão desabilitado */
+.customButton:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+/* Variação: botão primário */
+.primary {
+  background-color: #336458;
+  color: #fff;
+}
+
+.primary:hover {
+  background-color: #375c53;
+}
+
+/* Variação: botão secundário */
+.secondary {
+  background-color: #be9e34;
+  color: #333;
+}
+
+.secondary:hover {
+  background-color: #a2852a;
+}
+
+/* Variação: botão de alerta/erro */
+.danger {
+  background-color: #963838;
+  color: #fff;
+}
+
+.danger:hover {
+  background-color: #7a2e2e;
+}

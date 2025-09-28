@@ -1,0 +1,111 @@
+/* Container principal da página de detalhes */
+.detalhesContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-sizing: border-box;
+  margin-top: 30px;
+}
+
+/* Container interno centralizado com espaçamento entre blocos */
+.internContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Bloco da imagem principal e miniaturas */
+.imagemContainer {
+  flex: 1;
+  min-width: 320px;
+  max-width: 400px;
+}
+
+/* Imagem principal do produto */
+.imagemPrincipal {
+  width: 100%;
+  border: 1px solid #cdd1d3c4;
+  border-radius: 8px;
+  margin-bottom: 1px;
+}
+
+/* Galeria de miniaturas */
+.galeria {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* Miniatura de imagem */
+.thumb {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  transition: border 0.3s;
+}
+
+.thumb:hover {
+  border: 2px solid #007bff;
+}
+
+/* Container com as informações do produto */
+.infoContainer {
+  flex: 1;
+  min-width: 280px;
+}
+
+/* Estilo do nome da marca */
+.marca {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* Descrição do produto */
+.descricao {
+  margin-top: 16px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Preço cheio com tachado */
+.precoCheio {
+  text-decoration: line-through;
+  color: #999;
+  margin-top: 16px;
+}
+
+/* Selo de desconto */
+.desconto {
+  display: inline-block;
+  background: #d4edda;
+  color: #155724;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  margin: 4px 0;
+}
+
+/* Preço com desconto */
+.precoFinal {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+/* Responsividade: ajustes para telas menores */
+@media (max-width: 600px) {
+  .descricao {
+    font-size: 0.9rem;
+  }
+
+  .infoContainer {
+    padding: 0 10px;
+  }
+}

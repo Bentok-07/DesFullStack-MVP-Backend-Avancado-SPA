@@ -1,0 +1,17 @@
+/* Estilo do rodapé fixo na parte inferior da tela */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(30, 83, 23, 0.719);
+  padding: 1px 24px;
+  text-align: left;
+  z-index: 10;
+}
+
+/* Texto da área de copyright */
+.copy {
+  font-size: 0.875rem;
+  color: #ddd905;
+}

@@ -1,0 +1,159 @@
+/* Container principal da página Home */
+.homeContainer {
+  padding: 24px;
+  text-align: center;
+}
+
+/* Área de navegação em carrossel */
+.carrossel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+/* Linha de cards clicáveis por categoria */
+.cards {
+  display: flex;
+  gap: 20px;
+  cursor: pointer;
+}
+
+/* Placeholder visual para a imagem da categoria */
+.fotoFake {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 6px;
+  background-color: #fff;
+}
+
+/* Imagem da categoria centralizada e ajustada */
+.imagemCategoria {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* Texto com o nome da categoria */
+.nomeCategoria {
+  margin-top: 12px;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #333;
+}
+
+/* Botão de seta para navegar entre categorias */
+.seta {
+  background-color: #15e05918;
+  color: #284713d5;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 130px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(8, 8, 8, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+.seta:hover {
+  background-color: #c4b0004f;
+  transform: scale(1.1);
+}
+
+/* Sessão visual de destaque no topo */
+.heroSection {
+  background-size: cover;
+  background-position: center;
+  height: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  margin-bottom: 0px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Sobreposição de texto dentro do hero */
+.heroOverlay {
+  background-color: rgba(0, 0, 0, 0.55);
+  color: #d4af37;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+}
+
+.heroOverlay h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+
+.heroOverlay p {
+  font-size: 1.1rem;
+  margin: 0px;
+  color: #eaeaea;
+}
+
+/* Responsividade: ajuste para telas menores (até 1024px) */
+@media (max-width: 1024px) {
+  .heroSection {
+    height: 180px;
+  }
+
+  .heroOverlay {
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+
+  .heroOverlay h1 {
+    font-size: 1.5rem;
+  }
+
+  .heroOverlay p {
+    font-size: 0.9rem;
+  }
+
+  .carrossel {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .cards {
+    flex-direction: column;
+    overflow-y: auto;
+    gap: 16px;
+    padding: 0 12px;
+  }
+
+  .card,
+  .card.destaque {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    transform: none;
+    margin: 0 auto;
+  }
+
+  .fotoFake {
+    height: auto;
+    max-height: 200px;
+  }
+
+  .seta {
+    display: none;
+  }
+}

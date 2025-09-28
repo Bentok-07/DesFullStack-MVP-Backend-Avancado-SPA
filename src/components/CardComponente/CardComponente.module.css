@@ -1,0 +1,307 @@
+/*src/components/CardComponente/CardComponente.css*/
+.card {
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 16px;
+  background: rgba(255, 255, 255, 0.904);
+  box-shadow: 2px 2px 4px rgba(158, 240, 202, 0.05);
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box;
+}
+
+/* Contexto: Página de Produtos */
+.produtos {
+  background-color: #fff;
+}
+/* Cartão principal reutilizável */
+.card {
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 16px;
+  background: rgba(255, 255, 255, 0.904);
+  box-shadow: 2px 2px 4px rgba(158, 240, 202, 0.05);
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box;
+}
+
+/* Estilo aplicado na listagem de produtos */
+.produtos {
+  background-color: #fff;
+}
+
+/* Título do componente */
+.titulo {
+  font-size: 1.1rem;
+  margin: 8px 0;
+}
+
+/* Imagem do produto */
+.imagem {
+  width: 100%;
+  max-height: 160px;
+  object-fit: contain;
+  margin-bottom: 8px;
+}
+
+/* Linha com informações como marca e rating */
+.linhaInfo {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+}
+
+/* Estrelas de avaliação */
+.rating {
+  color: #f39c12;
+}
+
+/* Indicador de desconto */
+.desconto {
+  background: #d4edda;
+  color: #155724;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+
+/* Estilo do preço */
+.preco {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #2c3e50;
+}
+
+/* Container de botões */
+.botoes {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+/* Estilo do cartão de finalização */
+.finalizar {
+  background-color: #fdfdfd;
+  border: 1px solid #e0e0e0;
+}
+
+/* Estilo do preço exibido no cartão de finalização */
+.precoFinalizar {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #444;
+  margin-top: 8px;
+}
+
+/* Estilo específico do card quando exibido no carrinho */
+.carrinho {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 90vw;
+  max-width: 1000px;
+  margin: 12px auto;
+  height: 140px;
+  padding: 12px;
+  background-color: #f9f9f9;
+  border-left: 10px solid #48801ac0;
+  border-radius: 8px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.carrinho img {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.titulo {
+  font-size: 1.1rem;
+  margin: 8px 0;
+}
+
+.imagem {
+  width: 100%;
+  max-height: 160px;
+  object-fit: contain;
+  margin-bottom: 8px;
+}
+
+.linhaInfo {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+}
+
+.rating {
+  color: #f39c12;
+}
+
+.desconto {
+  background: #d4edda;
+  color: #155724;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+
+.preco {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #2c3e50;
+}
+
+.botoes {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+.finalizar {
+  background-color: #fdfdfd;
+  border: 1px solid #e0e0e0;
+}
+
+.precoFinalizar {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #444;
+  margin-top: 8px;
+}
+
+/* Carrinho */
+.carrinho {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 90vw;
+  max-width: 1000px;
+  margin: 12px auto;
+  height: 140px;
+  padding: 12px;
+  background-color: #f9f9f9;
+  border-left: 10px solid #48801ac0;
+  border-radius: 8px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.carrinho img {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.carrinho .titulo {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.carrinho .marca,
+.carrinho .preco,
+.carrinho .categoria {
+  font-size: 0.9rem;
+  margin: 4px 0;
+}
+
+.carrinho .botoes {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.conteudoCarrinho {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.infoCarrinho {
+  flex-grow: 1;
+}
+
+.quantidade {
+  font-size: 0.9rem;
+  margin: 4px 0;
+  color: #333;
+}
+
+.controleQuantidade {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 4px 0;
+}
+
+.btnQuantidade {
+  padding: 4px 8px;
+  font-size: 1rem;
+  background: #ddd;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 480px) {
+  .card {
+    max-width: 280px;
+    padding: 12px;
+    font-size: 0.85rem;
+  }
+
+  .titulo {
+    font-size: 1rem;
+  }
+
+  .botoes {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .preco {
+    font-size: 1rem;
+  }
+}
+
+
+
+@media (max-width: 480px) {
+  .carrinho {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+  }
+
+  .carrinho img {
+    width: 100%;
+    max-width: 100px;
+    margin: 0 auto;
+  }
+
+  .conteudoCarrinho {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .carrinho .botoes {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 8px;
+  }
+}

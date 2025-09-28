@@ -1,0 +1,65 @@
+/* Container principal da página do carrinho */
+.containerCarrinho {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-top: 30px;
+  box-sizing: border-box;
+}
+
+/* Bloco superior fixo contendo o título e o breadcrumb */
+.topoFixo {
+  margin-bottom: 10px;
+}
+
+.topoFixo h2 {
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+/* Lista dos itens adicionados ao carrinho */
+.listaItens {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  margin-bottom: 5px;
+}
+
+/* Seção inferior com total e botão de finalização */
+.finalizacaoFixa {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 16px 0;
+  border-top: 1px solid #ccc;
+}
+
+/* Texto de resumo do total do carrinho */
+.resumoCarrinho {
+  font-size: 18px;
+  text-align: right;
+  flex: 1;
+  padding: 10px;
+}
+
+/* Estilo do botão de finalizar compra */
+.botaoFinalizar {
+  padding: 10px;
+}
+
+/* Responsividade: ajuste da finalização para telas pequenas */
+@media (max-width: 600px) {
+  .finalizacaoFixa {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .resumoCarrinho,
+  .botaoFinalizar {
+    text-align: center;
+    padding: 8px 0;
+  }
+}
